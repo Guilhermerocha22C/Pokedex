@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./favicons/favicon-16x16.png">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/script.js" defer></script>
+
+    <title>Pokédex</title>
+</head>
+<body>
+    <main>
+        <img class="pokemon_image" src="#" alt="Pokemon">
+
+        <h1 class="pokemon_data">
+            <span class="pokemon_number"></span> - 
+            <span class="pokemon_name"></span>
+        </h1>
+
+        <div class="pokemon_additional_info">
+            <p class="pokemon_type"></p>
+            <p class="pokemon_abilities"></p>
+            <p class="pokemon_stats"></p>
+        </div>
+
+        <form class="form">
+            <input type="search"
+            class="input_search"
+            placeholder="Nome ou Número"
+            required
+            />
+        </form>
+
+        <div class="buttons">
+            <button class="button btn-prev">Anterior &lt;</button>
+            <button class="button btn-next">Próximo &gt;</button>
+        </div>
+        
+        <div class="more-info-button">
+            <button class="button btn-more-info">Mais Info</button>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Habilidades de <span class="modal-pokemon-name"></span></h2>
+                <ul class="modal-pokemon-abilities"></ul>
+                <p class="modal-pokemon-stats"></p>
+            </div>
+        </div>
+
+        <img class="pokedex" src="./images/pokedex.png" alt="Pokédex">
+    </main>
+</body>
+</html>
